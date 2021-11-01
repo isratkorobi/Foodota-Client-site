@@ -1,0 +1,37 @@
+.order-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-form form input, textarea{
+    width:70%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.order-btn{
+    background-color:#FFCA2C!important;
+    border:none;
+    padding:12px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.detail-card{
+    padding:20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:10px;
+}
+.detail-card h3{
+    font-weight: 600;
+}
+.detail-card p{
+    font-size:16px;
+    font-weight:500;
+}
+.detail-card h4{
+    font-weight:600;
+}
+.order-form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding:10px;
+}

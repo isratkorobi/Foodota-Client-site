@@ -1,0 +1,19 @@
+.addItem{
+    margin-top:60px;
+}
+.addItem h2{
+    color:rgba(1, 68, 1, 0.815);
+    font-size:35px;
+    font-weight:bold;
+}
+.addItem form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addItem form input, textarea{
+    width:40%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
