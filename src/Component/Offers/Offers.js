@@ -6,7 +6,7 @@ const Offers = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/offeritems")
+        fetch("https://ghostly-nightmare-54995.herokuapp.com/offeritems")
           .then((res) => res.json())
           .then((data) => setServices(data.slice(0, 12)));
       }, []);

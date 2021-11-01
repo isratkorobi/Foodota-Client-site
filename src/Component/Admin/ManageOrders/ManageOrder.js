@@ -6,7 +6,7 @@ const ManageOrder = () => {
   // const [user, setUser] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allOrders")
+    fetch("https://ghostly-nightmare-54995.herokuapp.com/allOrders")
       .then((res) => res.json())
       .then((data) => setVounteer(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageOrder = () => {
   const handleDelete = id => {
     const proceed = window.confirm('Are you sure, you want to delete?');
     if (proceed) {
-        const url = `http://localhost:5000/deleteOrder/${id}`;
+        const url = `https://ghostly-nightmare-54995.herokuapp.com/deleteOrder/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

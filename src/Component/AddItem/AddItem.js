@@ -8,7 +8,7 @@ const AddItem = () => {
   const { register, handleSubmit, reset} = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post('http://localhost:5000/burgeritems',data)
+    axios.post('https://ghostly-nightmare-54995.herokuapp.com/burgeritems',data)
     .then(res =>{
         if(res.data.insertedId){
             alert('added successfully');

@@ -7,7 +7,7 @@ const Order = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    fetch("http://localhost:5000/addOrders",{
+    fetch("https://ghostly-nightmare-54995.herokuapp.com/addOrders",{
       method: 'POST',
       headers: {"content-type" : "application/json"},
       body: JSON.stringify(data),
@@ -17,7 +17,7 @@ const Order = () => {
   const { itemId } = useParams();
   const [user, setuser] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/detailitems/${itemId}`)
+    fetch(`https://ghostly-nightmare-54995.herokuapp.com/detailitems/${itemId}`)
       .then((res) => res.json())
       .then((data) => setuser(data));
   }, [itemId]);
